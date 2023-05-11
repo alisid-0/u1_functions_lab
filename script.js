@@ -92,7 +92,5 @@ const boardSize = 8
 //     }
 // }
 
- const checkerBoard =() => {
-     for (let i=1; i <=boardSize; i++) i%2 == 0 ? console.log(` #`.repeat(boardSize/2).substring(1)) : console.log(` #`.repeat(boardSize/2))
-     }
+const checkerBoard =() => {for (let i=1; i <=boardSize; i++) i%2 == 0 ? console.log(` #`.repeat(boardSize/2).substring(1)) : console.log(` #`.repeat(boardSize/2))}
 checkerBoard()
