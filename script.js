@@ -57,7 +57,7 @@ const students = [
   // 5
 
 const numLog = (limit) => {
-    for (let i = 0; i < limit; i++){
+    for (let i = 1; i <=limit; i++){
         if (i%3 == 0 && i%5 == 0){
             console.log(`FizzBuzz`)
         } else if (i%3 == 0){
@@ -70,7 +70,11 @@ const numLog = (limit) => {
     }
 }
 
+
+
 numLog(100)
+
+console.log(`\n`)
 
 // 6
 
@@ -78,10 +82,15 @@ const boardSize = 8
 
 const checkerBoard =() => {
     for(i = 1; i <= boardSize; i++){
-        pattern = `#`
+        pattern = ` #`
         let board = pattern.repeat(boardSize/2)
-        console.log(board)
+        if (i%2==0){
+            console.log(board.substring(1))
+        } else {
+            console.log(board)
+        }
     }
+   
 }
 
 checkerBoard()
