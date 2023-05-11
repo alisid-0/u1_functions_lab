@@ -80,17 +80,19 @@ console.log(`\n`)
 
 const boardSize = 8
 
-const checkerBoard =() => {
-    for(i = 1; i <= boardSize; i++){
-        pattern = ` #`
-        let board = pattern.repeat(boardSize/2)
-        if (i%2==0){
-            console.log(board.substring(1))
-        } else {
-            console.log(board)
-        }
-    }
-   
-}
+// const checkerBoard =() => {
+//     for(i = 1; i <= boardSize; i++){
+//         pattern = ` #`
+//         let board = pattern.repeat(boardSize/2)
+//         if (i%2==0){
+//             console.log(board.substring(1))
+//         } else {
+//             console.log(board)
+//         }
+//     }
+// }
 
+ const checkerBoard =() => {
+     for (let i=1; i <=boardSize; i++) i%2 == 0 ? console.log(` #`.repeat(boardSize/2).substring(1)) : console.log(` #`.repeat(boardSize/2))
+     }
 checkerBoard()
